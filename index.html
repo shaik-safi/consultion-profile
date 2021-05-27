@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+        .carousel-item {
+            height: 12rem;
+            background: #777;
+        }
+
+        .navbar {
+            background-color: #0077B5;
+        }
+
+        .footer {
+            background-color: #0077B5;
+        }
+
+        .row {
+            text-align: center;
+        }
+
+        .align-center {
+            text-align: center;
+        }
+
+        .hash-list {
+            display: block;
+            padding: 0;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 768px) {
+            .hash-list.cols-3>li:nth-last-child(-n+3) {
+                border-bottom: none;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .hash-list.cols-3>li {
+                width: 33.3333%;
+            }
+        }
+
+        .hash-list>li {
+            display: block;
+            float: left;
+            border-right: 1px solid rgba(0, 0, 0, 0.2);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        }
+
+        .pad-30,
+        .pad-30-all>* {
+            padding: 30px;
+        }
+
+        img {
+            border: 0;
+        }
+
+        .mgb-20,
+        .mgb-20-all>* {
+            margin-bottom: 20px;
+        }
+
+        .wpx-100,
+        .wpx-100-after:after {
+            width: 100px;
+        }
+
+        .img-round,
+        .img-rel-round {
+            border-radius: 50%;
+        }
+
+        .padb-30,
+        .padb-30-all>* {
+            padding-bottom: 30px;
+        }
+
+        .mgb-40,
+        .mgb-40-all>* {
+            margin-bottom: 40px;
+        }
+
+        .align-center {
+            text-align: center;
+        }
+
+        [class*="line-b"] {
+            position: relative;
+            padding-bottom: 20px;
+            border-color: #E6AF2A;
+        }
+
+        .fg-text-d,
+        .fg-hov-text-d:hover,
+        .fg-active-text-d.active {
+            color: #222;
+        }
+
+        .font-cond-b {
+            font-weight: 700 !important;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">KAREER BANANA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/tutor.html">MyTutor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/1.jfif" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-block">
+                    <h2>Welcome to KAREER BANANA</h2>
+                    <p>Consult with people who treaded the career path you wish to take.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/2.jfif" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-block">
+                    <h2>Welcome to KAREER BANANA</h2>
+                    <p>Consult with people who treaded the career path you wish to take.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/3.jfif" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-block">
+                    <h2>Welcome to KAREER BANANA</h2>
+                    <p>Consult with people who treaded the career path you wish to take.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container marketing">
+        <div class="row">
+            <hr class="my-3">
+            <h1 class="font-cond-b fg-text-d lts-md fs-300 fs-300-xs no-mg" contenteditable="false">Why
+                KareerBanana
+                Works?
+            </h1>
+            <div class="col-lg-4">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <image href="/images/i1.png" height="90%" width="90%" />
+                </svg>
+
+                <h2>Personalized</h2>
+                <p>We understand that there may arise numerous questions and topics on which you may require support,
+                    advice
+                    and mentorship. Our platform provides short time bound consultations with experts, ensuring you get
+                    the
+                    right advice for your career.</p>
+                <!-- <p><a class="btn btn-secondary" href="#">View details »</a></p> -->
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <image href="/images/i2.png" height="100%" width="100%" />
+                </svg>
+
+                <h2>Trusted</h2>
+                <p>A curated catalog of experts from various fields to provide you advice and service tailored to your
+                    needs, combined with our easy to use platform and trusted checkout make kareerbanana a transparent
+                    and
+                    trusted service provider.</p>
+            </div>
+            <div class="col-lg-4">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <image href="/images/i3.png" height="100%" width="100%" />
+                </svg>
+
+                <h2>Do More</h2>
+                <p>Our unique peer to peer platform ensures that you pay only for services that you use instead of
+                    paying a
+                    lump sum amount. By cutting out redundant costs and passing the benefits to our users we empower you
+                    to
+                    do more with less.</p>
+            </div>
+            <hr class="my-3">
+            <h1 class="font-cond-b fg-text-d lts-md fs-300 fs-300-xs no-mg" contenteditable="false">Catering to your
+                every
+                need</h1>
+            <div class="row">
+                <div class="col-lg-4 d-flex align-items-start">
+                    <div>
+                        <h4 class="fw-bold mb-0">
+                            About us</h4>
+                        <p>"We are a small team of tech enthusiasts, eager to solve critical challenges using technology
+                            and
+                            innovative thinking and build systems to facilitate ease of use."</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex align-items-start">
+                    <div>
+                        <h4 class="fw-bold mb-0">Vision</h4>
+                        <p>“To help our clients transition into a new career especially in a foreign country, by
+                            providing
+                            user
+                            specific services and advice, making this transition as seamless and stress-free as
+                            possible.”
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex align-items-start">
+                    <div>
+                        <h4 class="fw-bold mb-0">Mission</h4>
+                        <p>“To disrupt the global career counseling market by providing services that enable our clients
+                            to
+                            make
+                            the right career choices. In this context we want to create a peer to peer platform that
+                            provides
+                            value to both our experts and clients.”</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-3">
+            <h1 class="font-cond-b fg-text-d lts-md fs-300 fs-300-xs no-mg" contenteditable="false">Read Customer
+                Reviews</h1>
+            <ul class="hash-list cols-3 cols-1-xs pad-30-all align-center text-sm">
+                <li>
+                    <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="wpx-100 img-round mgb-20"
+                        title="" alt="" data-edit="false" data-editor="field"
+                        data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]">
+                    <p class="fs-110 font-cond-l" contenteditable="false">" Will 100% recommend to friends and family
+                        planning
+                        to go to germany. Booking a session with a mentor in a related field really helps you get
+                        authentic
+                        information that is not available on the internet. "</p>
+                    <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">Siddhant</h5>
+                    <small class="font-cond case-u lts-sm fs-80 fg-text-l" contenteditable="false">Business Patna -
+                        Bihar</small>
+                </li>
+                <li>
+                    <img src="https://bootdey.com/img/Content/avatar/avatar4.png" class="wpx-100 img-round mgb-20"
+                        title="" alt="" data-edit="false" data-editor="field"
+                        data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]">
+                    <p class="fs-110 font-cond-l" contenteditable="false">" Booked multiple sessions for drafting SOP
+                        for
+                        various university applications, mentor was well versed with do’s and dont’s and guided me to
+                        the
+                        best
+                        of his abilities "</p>
+                    <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">Akshay</h5>
+                    <small class="font-cond case-u lts-sm fs-80 fg-text-l" contenteditable="false">Recording Kochi -
+                        Kerala</small>
+                </li>
+                <li>
+                    <img src="https://bootdey.com/img/Content/avatar/avatar5.png" class="wpx-100 img-round mgb-20"
+                        title="" alt="" data-edit="false" data-editor="field"
+                        data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]">
+                    <p class="fs-110 font-cond-l" contenteditable="false">" Course selection and university shortlisting
+                        was
+                        beautifully explained by the mentor, have a much better idea on which courses and universities
+                        to
+                        apply.
+                        "</p>
+                    <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">Abhishek</h5>
+                    <small class="font-cond case-u lts-sm fs-80 fg-text-l" contenteditable="false">Fund Ahmedabad -
+                        Gujarat</small>
+                </li>
+            </ul>
+            <hr class="my-4">
+            <h1 class="font-cond-b fg-text-d lts-md fs-300 fs-300-xs no-mg" contenteditable="false">Get A Head Start
+            </h1>
+            <div class="card  col-lg-4">
+                <img src="https://source.unsplash.com/1600x900/?nature,water" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Banana Stories: The First Slice</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+            <div class="card  col-lg-4">
+                <img src="https://source.unsplash.com/1600x900/?nature,air" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Banana Stories: The First Slice</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+            <div class="card  col-lg-4">
+                <img src="https://source.unsplash.com/1600x900/?nature,fire" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Banana Stories: The First Slice</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+        <hr class="my-4">
+        <h1 class="align-center font-cond-b fg-text-d lts-md fs-300 fs-300-xs no-mg" contenteditable="false">Become an
+            Expert</h1>
+        <form>
+            <div class="mb-3">
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1">
+                </div>
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">WhatsApp No.</label>
+                <input type="number" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">WhatsApp No.</label>
+                <input type="text" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">I consent KareerBanana to contact me</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <hr>
+    </div>
+
+    <footer style="color: aliceblue;" class="footer mt-auto py-3">
+        <div class="container">
+            <div class="row">
+                <div class="align-items-start">
+                    <h4 class="fw-bold mb-0">
+                        About Website</h4>
+                    <hr>
+                    <p>KareerBanana.com is determined to connect Indians to their compatriots living overseas for
+                        professional and educational advice.</p>
+                </div>
+            </div>
+            <p class="align-center">© 2021 KareerBanana.com All Rights Reserved</p>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
